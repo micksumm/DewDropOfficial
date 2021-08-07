@@ -7,7 +7,7 @@
           <p>Skin Concerns: {{ user.profile.skin_concern }}</p>
 
           <ol>
-            {% for product in user.profile.products %}
+            {% for product in products %}
             <li>{{ product.name}} {{product.description}}: {{product.treatment_type}} </li>
             {% endfor %}
           </ol>
