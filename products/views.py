@@ -29,7 +29,7 @@ class ProductGetByCondition(generics.ListAPIView):
 
 
 @login_required()
-def add_to_profile(request):
+def add_to_profile(request, **kwargs):
     # Get Profile given the logged in User
     user = request.user;
     profile = Profile.objects.get(user=user)
@@ -43,4 +43,4 @@ def add_to_profile(request):
     profile.save()
 
     # TODO: Do not render about.html
-    return render(request, 'products/about.html', {})
+    return render(request, 'products/about.html')
