@@ -4,7 +4,13 @@
         <div class="media-body">
           <h2 class="account-heading">{{ user.username }}</h2>
           <p class="text-secondary">{{ user.email }}</p>
-          <p>{{ user.profile.skin_concern }}</p>
+          <p>Skin Concerns: {{ user.profile.skin_concern }}</p>
+
+          <ol>
+            {% for product in user.profile.products %}
+            <li>{{ product.name}} {{product.description}}: {{product.treatment_type}} </li>
+            {% endfor %}
+          </ol>
         </div>
       </div>
 {% endblock content %}
