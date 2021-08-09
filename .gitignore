@@ -1,5 +1,3 @@
-<<<<<<< HEAD
 core/secrets.py
-=======
-core/secrets.py
->>>>>>> c71cad35ea9fc314b1dffd0d97a7cb27aa74db9a
+core/__pycache__ 
+db.sqlite3 
